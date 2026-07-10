@@ -1,0 +1,5 @@
+export type SafeUser = Omit<User,"email"|"hashedPassword"> &{
+    email: string;
+    hashedPassword: string;
+    address?: string[];
+};
